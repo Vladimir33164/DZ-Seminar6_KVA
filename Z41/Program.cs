@@ -7,13 +7,13 @@
 
 int M, count = 0; // объявления переменных
 float a;
-Console.Write("Введите натуральное число M: ");
+Console.Write("Enter a natural number M: ");
 M = int.Parse(Console.ReadLine()); // ввод количества чисел
-Console.WriteLine("Введите M чисел: ");
+Console.WriteLine("Enter M numbers: ");
 for (int i = 1; i <= M; i++) // в цикле вводим M чисел
     {    
         a = float.Parse(Console.ReadLine());
         if (a > 0) // и проверяем если число больше нуля, то
             count++; // увеличиваем счетчик
     }
-Console.WriteLine("Количество чисел больших нуля = " + count); // вывод результата
+Console.WriteLine("The number of numbers greater than zero = " + count); // вывод результата
